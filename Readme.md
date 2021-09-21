@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Андрей Масликов](https://up.htmlacademy.ru/htmlcss/32/user/1556551).
-- Наставник: `Вадим Новаш`.
+- Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
