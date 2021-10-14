@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body class="page">
@@ -28,19 +29,19 @@
         <img src="./img/icons/logo.svg" width="138" height="70" alt="Герб города Седона">
       </a>
       <ul class="user-navigation">
-        <li class="user-item">
-          <a class="user-navigation-link" href="#">
+        <li class="user-navigation-item">
+          <a class="user-navigation-link user-search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="user-navigation-item">
-          <a class="user-navigation-link" href="#">
+          <a class="user-navigation-link user-favourites" href="#">
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
         <li class="user-navigation-item">
-          <a class="user-navigation-link" href="#">
-            <span class="">Хочу сюда!</span>
+          <a class="user-navigation-link user-booking" href="#">
+            <span>Хочу сюда!</span>
           </a>
         </li>
       </ul>
@@ -58,19 +59,19 @@
           заслуживающий большего!
         </h2>
         <p class="section-subtitle">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
         <ol class="advantages-list">
           <li class="advantages-item">
             <ul class="features-list">
-              <li class="features-item">
-                <div class="features-info">
+              <li class="features-item special-feature">
+                <div class="features-info text-color">
                   <h3 class="item-title">
                     Настоящий
                     городок
                   </h3>
                   <span>— №1 —</span>
-                  <p class="item-text">
+                  <p class="item-text text-color">
                     Седона — не аттракцион для туристов, там течёт
                     своя жизнь
                   </p>
@@ -80,7 +81,7 @@
                 </div>
               </li>
               <li class="features-item">
-                <div class="features-info">
+                <div class="features-info apartment">
                   <h3 class="item-title">
                     Жильё
                   </h3>
@@ -92,7 +93,7 @@
                 </div>
               </li>
               <li class="features-item">
-                <div class="features-info">
+                <div class="features-info meal">
                   <h3 class="item-title">
                     Еда
                   </h3>
@@ -103,7 +104,7 @@
                 </div>
               </li>
               <li class="features-item">
-                <div class="features-info">
+                <div class="features-info souvenirs">
                   <h3 class="item-title">
                     Сувениры
                   </h3>
@@ -115,22 +116,22 @@
               </li>
             </ul>
           </li>
-          <li class="advantages-item">
-            <div class="features-image">
-              <img src="./img/photo-2.jpg" width="800" height="384" alt="Мост дьявола">
-            </div>
-            <div class="features-info">
+          <li class="advantages-item special-feature">
+            <div class="features-info text-color">
               <h3 class="item-title">
                 Там есть мост дьявола
               </h3>
               <span>— №2 —</span>
-              <p class="item-text">
+              <p class="item-text text-color">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
             </div>
+            <div class="features-image">
+              <img src="./img/photo-2.jpg" width="800" height="384" alt="Мост дьявола">
+            </div>
           </li>
           <li class="advantages-item">
-            <div class="features-info">
+            <div class="features-info territory">
               <h3 class="item-title">
                 Небольшая
                 площадь
@@ -143,7 +144,7 @@
             </div>
           </li>
           <li class="advantages-item">
-            <div class="features-info">
+            <div class="features-info road">
               <h3 class="item-title">
                 Красивая
                 дорога
@@ -155,7 +156,7 @@
             </div>
           </li>
           <li class="advantages-item">
-            <div class="features-info">
+            <div class="features-info tourists">
               <h3 class="item-title">
                 Мало
                 туристов
@@ -192,7 +193,7 @@
         </p>
         <form class="subscribe-form" action="#" method="post">
           <input type="search" name="subscribe" placeholder="Ваш e-mail">
-          <button type="submit">Подписаться</button>
+          <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

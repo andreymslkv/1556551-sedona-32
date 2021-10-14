@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body class="page">
@@ -29,20 +30,20 @@
       <a class="logo" href="index.html">
         <img src="./img/icons/logo.svg" width="138" height="70" alt="Герб города Седона">
       </a>
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link">
+      <ul class="user-navigation">
+        <li class="user-navigation-item">
+          <a class="user-navigation-link user-search">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="">
+        <li class="user-navigation-item">
+          <a class="user-navigation-link user-favourites" href="#">
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="">
-            <span class="visually-hidden">Хочу сюда!</span>
+        <li class="user-navigation-item">
+          <a class="user-navigation-link user-booking" href="#">
+            <span>Хочу сюда!</span>
           </a>
         </li>
       </ul>
@@ -54,7 +55,7 @@
         <h1 class="title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link home-link" href="index.html">
               <span class="visually-hidden">
                 Главная
               </span>
@@ -146,19 +147,25 @@
 
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка</h2>
-        <p class="sorting-result">Найдено гостиниц:</p>
+        <span class="sorting-result">Найдено гостиниц:</span>
         <span>38</span>
         <select class="select-control" id="sorting" name="sorting">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
-        <button class="view-results" type="button">Таблица</button>
-        <button class="view-results" type="button">По одной</button>
-        <button class="view-results" type="button">Список</button>
+        <button class="view-results table-view" type="button">
+          <span class="visually-hidden">Таблица</span>
+        </button>
+        <button class="view-results slideshow-view" type="button">
+          <span class="visually-hidden">По одной</span>
+        </button>
+        <button class="view-results list-view" type="button">
+          <span class="visually-hidden">Список</span>
+        </button>
       </section>
 
-      <section class="catalog">
+      <section class=" catalog">
         <ul class="search-results">
           <li class="search-results-item">
             <img src="./img/hotel-1.jpg" width="180" height="120" alt="Amara Resort & Spa" class="search-results-image">
@@ -226,7 +233,7 @@
               </div>
               <div class="right-block">
                 <span>От 2000 ₽</span>
-                <button class="favorities" type="button">В избранное</button>
+                <button class="favorities in-selected" type="button">В избранном</button>
               </div>
             </div>
             <div class="search-results-rating">
@@ -303,16 +310,16 @@
       </section>
 
       <section class="subscription">
-        <h2 class="section-title">
+        <h2 class="section-title subscription-title">
           Подпишитесь на рассылку
         </h2>
-        <p class="section-text">
+        <p class="section-text subscription-text">
           Только полезная информация и никакого спама,
           честное бойскаутское!
         </p>
         <form class="subscribe-form" action="#" method="post">
           <input type="search" name="subscribe" placeholder="Ваш e-mail">
-          <button type="submit">Подписаться</button>
+          <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
