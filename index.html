@@ -12,45 +12,47 @@
   <div class="page-wrapper">
 
     <header class="page-header">
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link active">Главная</a>
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link active">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo">
+          <img src="./img/icons/logo.svg" width="138" height="70" alt="Герб города Седона">
+        </a>
+        <ul class="user-navigation">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link user-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link user-favourites" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link user-booking" href="#">
+              <span>Хочу сюда!</span>
+            </a>
           </li>
         </ul>
-      </nav>
-      <a class="logo">
-        <img src="./img/icons/logo.svg" width="138" height="70" alt="Герб города Седона">
-      </a>
-      <ul class="user-navigation">
-        <li class="user-navigation-item">
-          <a class="user-navigation-link user-search" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="user-navigation-item">
-          <a class="user-navigation-link user-favourites" href="#">
-            <span class="visually-hidden">Избранное</span>
-          </a>
-        </li>
-        <li class="user-navigation-item">
-          <a class="user-navigation-link user-booking" href="#">
-            <span>Хочу сюда!</span>
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
 
-    <main class="main">
+    <main class="main main-container">
       <section class="hero">
         <h1 class="visually-hidden">Sedona</h1>
-        <img src="./img/icons/welcome.svg" alt="Добро пожаловать в Седону!">
+        <img class="hero-welcome" src="./img/icons/welcome.svg" alt="Добро пожаловать в Седону!">
       </section>
 
       <section class="advantages">
@@ -199,29 +201,31 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="socials-list">
-        <li class="socials-item">
-          <a href="https://twitter.com/htmlacademy_ru" class="social-link tw">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a href="https://www.facebook.com/htmlacademy" class="social-link fb">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social-link ytube">
-            <span class="visually-hidden">YouTube</span>
-          </a>
-        </li>
-      </ul>
-      <a class="phone" href="tel:+78128121212">
-        +7 (812) 812-12-12
-      </a>
-      <a class="copyright" href="https://htmlacademy.ru/">
-        <img src="./img/icons/logo_htmlacademy.svg" width="115" height="34" alt=".htmlacademy">
-      </a>
+      <div class="container">
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a href="https://twitter.com/htmlacademy_ru" class="social-link tw">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a href="https://www.facebook.com/htmlacademy" class="social-link fb">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social-link ytube">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <a class="phone" href="tel:+78128121212">
+          +7 (812) 812-12-12
+        </a>
+        <a class="copyright" href="https://htmlacademy.ru/">
+          <img src="./img/icons/logo_htmlacademy.svg" width="115" height="34" alt=".htmlacademy">
+        </a>
+      </div>
     </footer>
 
   </div>
