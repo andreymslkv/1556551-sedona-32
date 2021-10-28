@@ -52,6 +52,7 @@ html {
 
 .navigation {
   width: 385px;
+  margin-right: 78px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -84,7 +85,8 @@ html {
 
 .logo {
   display: block;
-  margin: 0 auto;
+  width: 138px;
+  height: 70px;
 }
 
 .user-navigation {
@@ -177,8 +179,10 @@ html {
 }
 
 .hero {
-  display: flex;
-  justify-content: center;
+  padding-top: 51px;
+  padding-right: 371px;
+  padding-bottom: 82px;
+  padding-left: 371px;
   background-image: url("../img/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,8 +192,9 @@ html {
 
 } */
 
-/* .advantages {
-} */
+.advantages {
+  padding-top: 63px;
+}
 
 .hero-welcome {
   display: block;
@@ -208,12 +213,17 @@ html {
 
 .section-subtitle {
   width: 720px;
+  padding-bottom: 79px;
   margin: 0 auto;
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
   color: #333333;
+}
+
+.advantages-title {
+  margin-bottom: 23px;
 }
 
 .advantages-list {
@@ -280,8 +290,6 @@ html {
 }
 
 .item-title {
-  width: 220px;
-  margin: 0 auto;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -290,7 +298,7 @@ html {
 }
 
 .item-text {
-  width: 220px;
+  width: 250px;
   margin: 0 auto;
   font-weight: 400;
   font-size: 18px;
@@ -305,12 +313,21 @@ html {
 }
 
 /* .features-image {
-}
-
-.hotel-search {
 } */
 
+.hotel-search {
+  padding-top: 91px;
+  padding-bottom: 91px;
+}
+
+.search-title {
+  margin-bottom: 15px;
+}
+
 .section-text {
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 55px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -335,16 +352,21 @@ html {
 }
 
 .subscription {
+  padding-top: 94px;
+  padding-bottom: 93px;
   background-image: url("../img/subscribe-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .subscription-title {
+  margin-bottom: 24px;
   color: #ffffff;
 }
 
 .subscription-text {
+  width: 720px;
+  margin-bottom: 42px;
   color: #ffffff;
 }
 
@@ -464,6 +486,7 @@ html {
 
 .hotels-filter {
   height: 100%;
+  padding-bottom: 86px;
   overflow: hidden;
   background-image: url("../img/catalog-background.jpg");
   background-repeat: no-repeat;
@@ -546,7 +569,6 @@ html {
 }
 
 .control-label {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -615,12 +637,12 @@ html {
   cursor: pointer;
 }
 
-/* .sorting {
-} */
+.sorting {
+  padding-top: 44px;
+}
 
 .sorting-result,
 .sorting-count {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
@@ -674,6 +696,7 @@ html {
 
 .search-results-item {
   display: flex;
+  margin-bottom: 58px;
 }
 
 .search-results-image {
@@ -760,6 +783,7 @@ html {
 .upload-btn {
   width: 625px;
   margin: 0 auto;
+  margin-bottom: 61px;
 }
 
 .upload-more {
@@ -782,6 +806,7 @@ html {
 .pagination {
   display: flex;
   padding-left: 0;
+  margin: 0;
   list-style-type: none;
 }
 
@@ -826,4 +851,62 @@ html {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.subscription-inner {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 93px;
+  background-color: #ffffff;
+}
+
+.inner-subscription-title {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.inner-subscription-text {
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+  color: #333333;
+}
+
+.inner-subscribe-form {
+  display: block;
+  text-align: center;
+}
+
+.inner-subscribe {
+  width: 800px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.inner-subscribe-form input {
+  width: 600px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  background: #f2f2f2;
+}
+
+.button {
+  width: 150px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #83b3d3;
+  color: #ffffff;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
 }
