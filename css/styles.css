@@ -14,12 +14,15 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
 
 .page {
-  box-sizing: border-box;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -46,8 +49,9 @@ html {
 
 .container {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .navigation {
@@ -290,6 +294,7 @@ html {
 }
 
 .item-title {
+  padding: 0 110px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -514,6 +519,10 @@ html {
 }
 
 .home-link {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-right: 22px;
   background-image: url("../img/icons/home.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -696,7 +705,12 @@ html {
 
 .search-results-item {
   display: flex;
-  margin-bottom: 58px;
+  padding: 29px 0;
+  border-bottom: 1px solid #000;
+}
+
+.search-results-item:first-child {
+  border-top: 1px solid #000;
 }
 
 .search-results-image {
