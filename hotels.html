@@ -64,6 +64,9 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
+              <span class="next-arr"></span>
+            </li>
+            <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">
                 Гостиницы
               </a>
@@ -158,7 +161,7 @@
           <h2 class="visually-hidden">Сортировка</h2>
           <span class="sorting-result">Найдено гостиниц:</span>
           <span class="sorting-count">38</span>
-          <select class="select-control" id="sorting" name="sorting">
+          <select class="select-control type-hotels-control" id="sorting" name="sorting">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
@@ -169,13 +172,13 @@
           <button class="view-results slideshow-view" type="button">
             <span class="visually-hidden">Слайды</span>
           </button>
-          <button class="view-results list-view" type="button">
+          <button class="view-results list-view view-results-active" type="button">
             <span class="visually-hidden">Список</span>
           </button>
         </div>
       </section>
 
-      <section class=" catalog">
+      <section class="catalog">
         <div class="inner-container">
           <ul class="search-results">
             <li class="search-results-item">
@@ -320,7 +323,7 @@
               <span>Гостиниц на странице:</span>
               <form class="results-count-type">
                 <label class="visually-hidden" for="count">Количество</label>
-                <select class="select-control" id="count" name="count">
+                <select class="select-control select-control-count" id="count" name="count">
                   <option value="number" selected>4</option>
                   <option value="number">6</option>
                   <option value="number">8</option>
