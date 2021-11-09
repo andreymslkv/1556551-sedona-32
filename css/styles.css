@@ -183,11 +183,12 @@ html {
 }
 
 .hero {
+  position: relative;
   padding-top: 51px;
   padding-right: 371px;
   padding-bottom: 82px;
   padding-left: 371px;
-  background-image: url("../img/hero-bg.jpg");
+  background-image: url("../img/hero-bgr.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -419,6 +420,8 @@ html {
 }
 
 .subscribe {
+  display: grid;
+  grid-template-columns: 600px 200px;
   width: 800px;
   height: 60px;
   margin: 0 auto;
@@ -426,12 +429,16 @@ html {
 
 .subscribe-form input {
   width: 600px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 22px;
   border: none;
   border-radius: 10px 0px 0px 10px;
   background: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .button {
@@ -463,6 +470,7 @@ html {
 
 .socials-list {
   display: flex;
+  flex-wrap: wrap;
   width: 190px;
   padding: 0;
   margin-right: 175px;
@@ -991,8 +999,9 @@ html {
 }
 
 .inner-subscribe-form {
-  display: block;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 600px 200px;
+  justify-content: center;
 }
 
 .inner-subscribe {
@@ -1003,18 +1012,20 @@ html {
 
 .inner-subscribe-form input {
   width: 600px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 22px;
   border: none;
   border-radius: 10px 0px 0px 10px;
   background: #f2f2f2;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .button {
-  width: 150px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  width: 200px;
+  padding: 22px 30px 22px 30px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
