@@ -149,7 +149,9 @@
               </div>
             </fieldset>
             <div class="catalog-buttongroup">
-              <button class="apply-button" type="submit">Применить</button>
+              <button class="apply-button" type="submit">
+                <span>Применить</span>
+              </button>
               <button class="reset-button" type="reset">Сбросить</button>
             </div>
           </form>
@@ -157,10 +159,11 @@
       </section>
 
       <section class="sorting">
-        <div class="inner-container">
+        <div class="inner-container sorting-inner-container">
           <h2 class="visually-hidden">Сортировка</h2>
-          <span class="sorting-result">Найдено гостиниц:</span>
-          <span class="sorting-count">38</span>
+          <p class="sorting-result">Найдено гостиниц:
+            <span class="sorting-count">38</span>
+          </p>
           <select class="select-control type-hotels-control" id="sorting" name="sorting">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешёвое</option>
@@ -182,20 +185,25 @@
         <div class="inner-container">
           <ul class="search-results">
             <li class="search-results-item">
-              <img class="search-results-image" src="./img/hotel-1.jpg" width="180" height="120"
-                alt="Amara Resort & Spa">
+              <a class="search-results-image" href="#">
+                <img src="./img/hotel-1.jpg" width="180" height="120" alt="Amara Resort & Spa">
+              </a>
               <div class="search-results-info">
-                <h3 class="results-info-title">
+                <a class="results-info-title" href="#">
                   Amara Resort & Spa
-                </h3>
+                </a>
                 <div class="results-blocks">
                   <div class="left-block">
                     <span>Гостиница</span>
-                    <button class="more" type="button">подробнее</button>
+                    <button class="more" type="button">
+                      <span>подробнее</span>
+                    </button>
                   </div>
                   <div class="right-block">
                     <span>От 4000 ₽</span>
-                    <button class="favorities" type="button">В избранное</button>
+                    <button class="favorities" type="button">
+                      <span>В избранное</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -212,19 +220,25 @@
               </div>
             </li>
             <li class="search-results-item">
-              <img src="./img/hotel-2.jpg" width="180" height="120" alt="Desert Quail Inn" class="search-results-image">
+              <a class="search-results-image" href="#">
+                <img src="./img/hotel-2.jpg" width="180" height="120" alt="Desert Quail Inn">
+              </a>
               <div class="search-results-info">
-                <h3 class="results-info-title">
+                <a class="results-info-title" href="#">
                   Desert Quail Inn
-                </h3>
+                </a>
                 <div class="results-blocks">
                   <div class="left-block">
                     <span>Мотель</span>
-                    <button class="more" type="button">подробнее</button>
+                    <button class="more" type="button">
+                      <span>подробнее</span>
+                    </button>
                   </div>
                   <div class="right-block">
                     <span>От 3000 ₽</span>
-                    <button class="favorities" type="button">В избранное</button>
+                    <button class="favorities" type="button">
+                      <span>В избранное</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -240,20 +254,25 @@
               </div>
             </li>
             <li class="search-results-item">
-              <img src="./img/hotel-3.jpg" width="180" height="120" alt="Villas at Poco Diablo"
-                class="search-results-image">
+              <a class="search-results-image" href="#">
+                <img src="./img/hotel-3.jpg" width="180" height="120" alt="Villas at Poco Diablo">
+              </a>
               <div class="search-results-info">
-                <h3 class="results-info-title">
+                <a class="results-info-title" href="#">
                   Villas at Poco Diablo
-                </h3>
+                </a>
                 <div class="results-blocks">
                   <div class="left-block">
                     <span>Апартаменты</span>
-                    <button class="more" type="button">подробнее</button>
+                    <button class="more" type="button">
+                      <span>подробнее</span>
+                    </button>
                   </div>
                   <div class="right-block">
                     <span>От 2000 ₽</span>
-                    <button class="favorities in-selected" type="button">В избранном</button>
+                    <button class="favorities in-selected" type="button">
+                      <span>В избранное</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -268,19 +287,25 @@
               </div>
             </li>
             <li class="search-results-item">
-              <img src="./img/hotel-4.jpg" width="180" height="120" alt="GreenTree Inn" class="search-results-image">
+              <a class="search-results-image" href="#">
+                <img src="./img/hotel-4.jpg" width="180" height="120" alt="GreenTree Inn">
+              </a>
               <div class="search-results-info">
-                <h3 class="results-info-title">
+                <a class="results-info-title" href="#">
                   GreenTree Inn
-                </h3>
+                </a>
                 <div class="results-blocks">
                   <div class="left-block">
                     <span>Гостиница</span>
-                    <button class="more" type="button">подробнее</button>
+                    <button class="more" type="button">
+                      <span>подробнее</span>
+                    </button>
                   </div>
                   <div class="right-block">
                     <span>От 3000 ₽</span>
-                    <button class="favorities" type="button">В избранное</button>
+                    <button class="favorities" type="button">
+                      <span>В избранное</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -296,7 +321,9 @@
             </li>
           </ul>
           <div class="upload-btn">
-            <button class="upload-more">Загрузить еще</button>
+            <button class="upload-more">
+              <span>Загрузить еще</span>
+            </button>
           </div>
           <div class="catalog-bottom-wrapper">
             <ul class="pagination">
@@ -345,7 +372,9 @@
         </p>
         <form class="inner-subscribe-form" action="#" method="post">
           <input type="search" name="subscribe" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
+          <button class="button" type="submit">
+            <span>Подписаться</span>
+          </button>
         </form>
       </section>
     </main>
