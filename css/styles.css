@@ -78,6 +78,24 @@ html {
   margin-right: 33px;
   text-decoration: none;
   color: #000000;
+  fill: currentColor;
+}
+
+.navigation-link:hover {
+  color: #756257;
+  fill: #756257;
+}
+
+.navigation-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #83b3d3;
+  border-radius: 10px;
+}
+
+.navigation-link:active {
+  color: #756257;
+  fill: #756257;
+  fill-opacity: 0.3;
 }
 
 .navigation-link:nth-child(3) {
@@ -118,24 +136,26 @@ html {
   cursor: pointer;
 }
 
+.user-navigation-link:hover {
+  color: #756257;
+  fill: #756257;
+}
+
+.user-navigation-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #83b3d3;
+  border-radius: 10px;
+}
+
+.user-navigation-link:active {
+  fill: #756257;
+  fill-opacity: 0.3;
+}
+
 .search,
 .favourites {
   width: 18px;
   height: 18px;
-}
-
-.search {
-  background-image: url("../img/icons/search.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.favourites {
-  background-image: url("../img/icons/heart.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 .popup-btn {
@@ -161,11 +181,109 @@ html {
 }
 
 .popup-btn:focus {
-  outline: 3px solid #83b3d3;
+  outline: none;
+  box-shadow: 0 0 0 3px #615048;
+  border-radius: 4px;
 }
 
 .popup-btn:active span {
   opacity: 0.3;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+  width: 400px;
+  min-height: 186px;
+  font-family: "PT Sans", sans-serif;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.popup-open {
+  display: block;
+}
+
+.favourites {
+  position: relative;
+}
+
+.popup-content {
+  height: 100%;
+  padding: 25px 25px 0 25px;
+}
+
+.popup-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.popup-item {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.popup-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.popup-img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: 17px;
+  border-radius: 50%;
+  transform: translate(0, 20%);
+}
+
+.popup-link-description {
+  width: 100%;
+}
+
+.popup-link-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.popup-link-subtitle {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #333333;
+  transform: translate(0, -15px);
+}
+
+.delete-btn {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.all-favourites-button {
+  display: block;
+  width: 100%;
+  padding: 20px 115px;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: #756257;
+  border-radius: 0px 0px 20px 20px;
+  color: #ffffff;
 }
 
 .visually-hidden {
@@ -180,11 +298,14 @@ html {
 }
 
 .user-navigation-item {
+  position: relative;
   display: flex;
   padding: 0;
   margin: 0;
   margin-right: 21px;
   margin-left: auto;
+  color: #000000;
+  fill: currentColor;
 }
 
 .user-navigation-item + .user-navigation-item {
@@ -195,8 +316,23 @@ html {
   margin-right: 0;
 }
 
-/* .main {
-} */
+.favourites-number {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19px;
+  height: 19px;
+  top: -10px;
+  left: 10px;
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: -0.1em;
+  background-color: #7db54f;
+  color: #ffffff;
+}
 
 .main-container {
   flex-grow: 1;
@@ -534,6 +670,22 @@ html {
   height: 100%;
   margin-right: 30px;
   text-decoration: none;
+  color: #83b3d3;
+  fill: currentColor;
+}
+
+.social-link:hover {
+  color: #68a2ca;
+  fill: #68a2ca;
+}
+
+.social-link:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.social-link:active {
+  fill: #68a2ca;
+  fill-opacity: 0.3;
 }
 
 .tw {
@@ -589,10 +741,13 @@ html {
 
 .copyright {
   margin-left: auto;
+  color: #000000;
+  fill: currentColor;
 }
 
 .copyright:hover {
   color: #756257;
+  fill: #756257;
 }
 
 .copyright:focus {
