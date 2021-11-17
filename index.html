@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="shortcut icon" href="./img/icons/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -57,21 +58,21 @@
             </svg>
           </a>
           <div class="favourites-number">12</div>
-          <div class="popup popup-open">
+          <div class="popup">
             <div class="popup-content">
               <h2 class="visually-hidden">Избранное</h2>
               <ul class="popup-list">
                 <li class="popup-item">
                   <a class="popup-link" href="#">
                     <img class="popup-img" src="./img/hotel3small.jpg" width="48" height="48">
-                    <div class="popup-link-description">
-                      <p class="popup-link-title">
+                    <p class="popup-link-description">
+                      <span class="popup-link-title">
                         Desert Quail Inn
-                      </p>
-                      <p class="popup-link-subtitle">
+                      </span>
+                      <span class="popup-link-subtitle">
                         Мотель
-                      </p>
-                    </div>
+                      </span>
+                    </p>
                   </a>
                   <button type="button" class="delete-btn">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -346,8 +347,62 @@
             fill="currentColor" />
         </svg>
       </a>
-
     </footer>
+
+    <div class="modal-container">
+      <div class="modal">
+        <div class="modal-top">
+          <h2 class="modal-title">
+            Поиск гостиницы в Седоне
+          </h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="fieldgroupe">
+            <label class="check-in">
+              Дата заезда:
+              <input class="check-in-field field" type="date" id="check-in" placeholder="Укажите дату">
+            </label>
+            <label class="check-out">
+              Дата выезда:
+              <input class="check-out-field field" type="date" id="check-out" placeholder="Укажите дату">
+            </label>
+          </p>
+          <label class="adults" for="adults">
+            Взрослые:
+          </label>
+          <button class="adults-minus-btn"></button>
+          <input class="adults-field" type="number" id="adults" value="2">
+          <button class="adults-plus-btn"></button>
+          <label class="children" for="children">
+            Дети:
+          </label>
+          <button class="info">
+            <span>
+              <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_346_217)">
+                  <path d="M0 9H1L1 3H0L0 9Z" fill="white" />
+                  <path d="M1 0H0V1H1V0Z" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_346_217">
+                    <rect width="1" height="9" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </button>
+          <button class="children-minus-btn"></button>
+          <input class="children-field" type="number" id="children" value="1">
+          <button class="children-plus-btn"></button>
+          <button class="modal-button">
+            <span>Найти</span>
+          </button>
+        </form>
+      </div>
+    </div>
 
   </div>
 </body>
