@@ -626,28 +626,39 @@ html {
 
 .subscribe-form input {
   width: 600px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 22px;
+  height: 60px;
+  padding: 5px 22px;
   border: none;
   border-radius: 10px 0px 0px 10px;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+  box-sizing: border-box;
 }
 
 .subscribe-form:hover input {
   background-color: #e6e6e6;
+  border: 3px solid #e6e6e6;
 }
 
 .subscribe-form:focus input {
-  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+  outline: none;
 }
 
-.button {
-  width: 150px;
+.subscribe-form:active input {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.subscribe-form .button {
+  width: 200px;
+  min-height: 60px;
   padding-top: 6px;
   padding-bottom: 6px;
   font-family: "PT Sans", sans-serif;
@@ -657,21 +668,31 @@ html {
   text-align: center;
   text-transform: uppercase;
   background-color: #83b3d3;
+  border: 3px solid #83b3d3;
   color: #ffffff;
   border: none;
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
-.button:hover {
+.subscribe-form .button:hover {
   background-color: #68a2ca;
+  border: 3px solid #68a2ca;
 }
 
-.button:focus {
-  outline: 3px solid #756257;
+.subscribe-form .button:focus {
+  background-color: #68a2ca;
+  border: 3px solid #756257;
+  outline: none;
 }
 
-.button:active span {
+.subscribe-form .button:active {
+  background-color: #68a2ca;
+  border: 3px solid #68a2ca;
+}
+
+.subscribe-form .button:active span {
   opacity: 0.3;
 }
 
@@ -987,7 +1008,6 @@ html {
   border: none;
   background-color: transparent;
   z-index: 1;
-
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1289,10 +1309,13 @@ html {
 
 .control:hover .control-mark {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: none;
 }
 
 .control-input:focus + .control-mark {
-  outline: 3px solid #83b3d3;
+  border: 3px solid #83b3d3;
+  outline: none;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1469,6 +1492,7 @@ html {
   font-size: 18px;
   line-height: 23px;
   border: 2px solid #e6e6e6;
+  border-radius: 4px;
   color: #333333;
   background-image: url("../img/icons/dropdown.svg");
   background-repeat: no-repeat;
@@ -1479,11 +1503,11 @@ html {
 .select-control:hover,
 .select-control:focus {
   border-color: #83b3d3;
-  border-radius: 4px;
+  outline: none;
 }
 
-.select-control:focus {
-  outline: 2px solid #83b3d3;
+.select-control:active option {
+  border-color: #e6e6e6;
 }
 
 .type-hotels-control {
@@ -1509,6 +1533,16 @@ html {
 }
 
 .view-results-active {
+  border: 2px solid #000000;
+}
+
+.view-results:hover,
+.view-results:focus {
+  border-color: #83b3d3;
+  outline: none;
+}
+
+.view-results:active {
   border: 2px solid #000000;
 }
 
@@ -1770,6 +1804,18 @@ html {
   background-color: #83b3d3;
 }
 
+.pagination-item:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-item:focus {
+  border-color: #756257;
+}
+
+.pagination-item:active .pagination-link {
+  opacity: 0.3;
+}
+
 .pagination-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -1848,28 +1894,41 @@ html {
 
 .inner-subscribe-form input {
   width: 600px;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 22px;
+  height: 60px;
+  padding: 5px 22px;
   border: none;
   border-radius: 10px 0px 0px 10px;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+  box-sizing: border-box;
 }
 
 .inner-subscribe-form:hover input {
   background-color: #e6e6e6;
+  border: 3px solid #e6e6e6;
 }
 
 .inner-subscribe-form:focus input {
-  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+  outline: none;
 }
 
-.button {
+.inner-subscribe-form:active input {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.inner-subscribe-form .button {
   width: 200px;
-  padding: 22px 30px 22px 30px;
+  min-height: 60px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -1877,8 +1936,30 @@ html {
   text-align: center;
   text-transform: uppercase;
   background-color: #83b3d3;
+  border: 3px solid #83b3d3;
   color: #ffffff;
   border: none;
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
+  box-sizing: border-box;
+}
+
+.inner-subscribe-form .button:hover {
+  background-color: #68a2ca;
+  border: 3px solid #68a2ca;
+}
+
+.inner-subscribe-form .button:focus {
+  background-color: #68a2ca;
+  border: 3px solid #756257;
+  outline: none;
+}
+
+.inner-subscribe-form .button:active {
+  background-color: #68a2ca;
+  border: 3px solid #68a2ca;
+}
+
+.inner-subscribe-form .button:active span {
+  opacity: 0.3;
 }
