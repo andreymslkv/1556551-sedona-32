@@ -1298,6 +1298,7 @@ html {
   border: none;
   border-radius: 4px;
   background-color: #ffffff;
+  border: 3px solid #ffffff;
 }
 
 .control-label {
@@ -1321,8 +1322,8 @@ html {
 .control-input[type="checkbox"]:checked + .control-mark::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 2px;
+  top: 1px;
+  left: 0;
   width: 12px;
   height: 9px;
   background-color: #ffffff;
@@ -1338,8 +1339,8 @@ html {
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 2px;
+  left: 1px;
   width: 8px;
   height: 8px;
   background-color: #242424;
