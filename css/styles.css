@@ -1315,8 +1315,12 @@ html {
 }
 
 .control-input:focus + .control-mark {
-  border: 3px solid #83b3d3;
+  border-color: #83b3d3;
   outline: none;
+}
+
+.control:active .control-mark {
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
