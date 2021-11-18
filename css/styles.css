@@ -383,10 +383,6 @@ html {
   background-size: cover;
 }
 
-/* .hero img {
-
-} */
-
 .advantages {
   padding-top: 63px;
 }
@@ -418,7 +414,7 @@ html {
 }
 
 .advantages-title {
-  margin-bottom: 23px;
+  margin-bottom: 35px;
 }
 
 .advantages-list {
@@ -455,12 +451,21 @@ html {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.apartment {
+  padding-top: 90px;
+}
+
 .road {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .meal {
   background-color: #ffffff;
+  padding-top: 92px;
+}
+
+.souvenirs {
+  padding-top: 86px;
 }
 
 .apartment::before {
@@ -507,7 +512,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 400px;
-  padding-top: 98px;
+  padding-top: 74px;
   padding-bottom: 77px;
 }
 
@@ -532,7 +537,7 @@ html {
 .item-text {
   width: 250px;
   margin: 0 auto;
-  margin-top: 26px;
+  margin-top: 34px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1133,9 +1138,6 @@ html {
 
 /* Страница Гостиницы */
 
-/* .main-inner {
-} */
-
 .inner-container {
   padding: 0 70px;
 }
@@ -1163,9 +1165,6 @@ html {
   padding: 0;
   list-style: none;
 }
-
-/* .breadcrumbs-item {
-} */
 
 .breadcrumbs-link {
   text-decoration: none;
@@ -1263,10 +1262,13 @@ html {
   border-radius: 5px;
 }
 
-.range-toggle:active,
 .range-toggle:focus {
   outline: 3px solid #83b3d3;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
@@ -1317,9 +1319,9 @@ html {
   outline: 3px solid #83b3d3;
 }
 
-/* .control:active .control-mark {
+.control:active .control-mark {
   opacity: 0.3;
-} */
+}
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   content: "";
@@ -1565,9 +1567,6 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-/* .catalog {
-} */
 
 .search-results {
   padding-left: 0;
@@ -1850,9 +1849,6 @@ html {
   align-self: center;
   margin-right: 50px;
 }
-
-/* .results-count-type {
-} */
 
 .catalog-bottom-wrapper {
   display: flex;
