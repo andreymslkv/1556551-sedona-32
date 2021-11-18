@@ -72,11 +72,11 @@ html {
   list-style: none;
 }
 
-/* .navigation-item {
-} */
+.navigation-item {
+  margin-right: 33px;
+}
 
 .navigation-link {
-  margin-right: 33px;
   text-decoration: none;
   color: #000000;
   fill: currentColor;
@@ -104,6 +104,17 @@ html {
 }
 
 .active {
+  position: relative;
+}
+
+.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -17px;
+  background-color: #756257;
 }
 
 .logo {
@@ -200,8 +211,8 @@ html {
   width: 400px;
   min-height: 186px;
   font-family: "PT Sans", sans-serif;
-  border: 1px solid #e6e6e6;
-  border-radius: 0px 0px 20px 20px;
+  border: none;
+  border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   color: #000000;
@@ -210,13 +221,11 @@ html {
 .popup::before {
   content: "";
   position: absolute;
-  width: 0;
-  height: 0;
+  width: 20px;
+  height: 9px;
   left: 190px;
   top: -9px;
-  border-style: solid;
-  border-width: 0 10px 9px 10px;
-  border-color: transparent transparent #ffffff transparent;
+  background-image: url("../img/icons/triangle.svg");
   box-shadow: 0px -1px 0px #e4e4e4;
 }
 
@@ -231,6 +240,10 @@ html {
 .popup-content {
   height: 100%;
   padding: 25px 25px 0 25px;
+  border-top: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-radius: 20px;
 }
 
 .popup-list {
@@ -786,36 +799,33 @@ html {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: transparent;
+  background-color: rgba(242, 242, 242, 0.8);
   z-index: 100;
 }
 
-.modal-container-open {
-  background-color: rgba(242, 242, 242, 0.8);
+.modal-container-close {
+  display: none;
 }
 
 .modal {
-  display: none;
   position: relative;
   width: 715px;
+  min-height: 561px;
   margin: auto;
-  padding: 54px 70px 70px 70px;
+  padding: 62px 70px 70px 70px;
   background-color: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
-.modal-open {
-  display: block;
-}
-
 .modal-top {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .modal-title {
-  font-family: "PT Sans", sans-serif;
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
@@ -823,6 +833,7 @@ html {
 }
 
 .modal-close-button {
+  display: flex;
   width: 53px;
   height: 53px;
   margin-left: auto;
@@ -832,143 +843,187 @@ html {
   background-image: url("../img/icons/close.svg");
   background-repeat: no-repeat;
   background-position: center;
+  border: 3px solid #f2f2f2;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
-.modal-form {
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+  border: 3px solid #e6e6e6;
 }
 
-.fieldgroupe {
-  display: flex;
-  flex-direction: column;
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+  outline: none;
 }
 
-.check-in {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 40px;
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  border: 3px solid #e6e6e6;
 }
 
-.check-in-field {
-  margin-bottom: 40px;
-  margin-left: 55px;
+.modal-close-button svg {
+  margin: auto;
 }
 
-.field {
-  max-width: 420px;
-  height: 50px;
-  padding-right: 17px;
-  padding-left: 19px;
+.modal-close-button:active path {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.parameters-group {
+  margin: 0;
+  padding: 0;
   border: none;
-  border-radius: 4px;
-  background-color: #f2f2f2;
 }
 
-.error {
-  border-color: #ff5757;
-}
-
-.check-out {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 40px;
-}
-
-.check-out-field {
-  margin-left: 50px;
-}
-
-.adults {
-  padding-right: 55px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 40px;
-}
-
-.adults-field,
-.children-field {
+.parameters-item {
   position: relative;
-  width: 133px;
-  min-height: 50px;
-  margin-bottom: 40px;
-  text-align: center;
-  border: none;
-  border-radius: 4px;
-  background-color: #f2f2f2;
-  color: #000000;
-}
-
-.adults-field {
-  margin-right: 56px;
-}
-
-.adults-field::-webkit-inner-spin-button,
-.adults-field::-webkit-outer-spin-button {
-  appearance: none;
+  display: flex;
   margin: 0;
+  align-items: center;
 }
 
-.children-field::-webkit-inner-spin-button,
-.children-field::-webkit-outer-spin-button {
-  appearance: none;
-  margin: 0;
+.parameters-group-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.adults-minus-btn {
-  position: absolute;
-  top: 320px;
-  width: 50px;
+.parameters-group-wrapper .parameters-item {
+  width: 287px;
+}
+
+.parameters-label {
+  display: block;
+  width: 155px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.parameters-label[for="children"] {
+  padding-left: 48px;
+}
+
+.parameters-input {
+  padding: 8px;
+  padding-left: 20px;
+  width: 420px;
   height: 50px;
-  background-image: url("../img/icons/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
-  border: none;
-}
-
-.adults-plus-btn {
-  position: absolute;
-  left: 294px;
-  top: 320px;
-  width: 50px;
-  height: 50px;
-  background-image: url("../img/icons/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-}
-
-.children {
-  font-weight: 700;
+  color: inherit;
   font-size: 18px;
-  line-height: 40px;
+  text-transform: inherit;
+  line-height: 26px;
+  font-weight: bold;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-.children-minus-btn {
-  position: absolute;
-  top: 320px;
-  width: 50px;
-  height: 50px;
-  background-image: url("../img/icons/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
-  border: none;
+.parameters-input:hover {
+  border: 2px solid #e6e6e6;
+  background-color: #e6e6e6;
 }
 
-.children-plus-btn {
-  position: absolute;
-  left: 592px;
-  width: 50px;
+.parameters-input:focus {
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+
+.parameters-input:active {
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+.parameters-input[type="number"] {
+  padding: 7px 40px;
+  width: 133px;
   height: 50px;
-  background-image: url("../img/icons/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
+}
+
+.parameters-input[type="number"]::-webkit-inner-spin-button,
+.parameters-input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.calendar {
+  position: absolute;
+  right: 17px;
   border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.message {
+  display: block;
+  margin-left: 155px;
+  margin-bottom: 11px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.message-error {
+  color: #ff5757;
+}
+
+.minus,
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.minus path,
+.plus path {
+  fill: rgb(0, 0, 0, 0.3);
+}
+
+.minus:hover path,
+.plus:hover path {
+  fill: #000000;
+}
+
+.minus:focus,
+.plus:focus {
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+
+.minus:active path,
+.plus:active path {
+  fill: rgb(0, 0, 0, 0.2);
+}
+
+.minus {
+  left: 170px;
+}
+
+.plus {
+  right: 15px;
 }
 
 .info {
   position: relative;
+  padding: 0 12px;
   width: 25px;
   height: 25px;
   margin-right: 15px;
@@ -976,6 +1031,9 @@ html {
   border: none;
   border-radius: 50%;
   background-color: #83b3d3;
+  background-image: url("../img/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   color: #ffffff;
   cursor: pointer;
 }
@@ -984,7 +1042,7 @@ html {
   content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
   position: absolute;
   left: -125px;
-  top: 30px;
+  top: 41px;
   width: 217px;
   padding: 15px 18px 18px 22px;
   font-family: "PT Sans", sans-serif;
@@ -1010,19 +1068,18 @@ html {
   content: "";
   position: absolute;
   left: 10%;
-  top: 100%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 9.5px 9px 9.5px;
-  border-color: transparent transparent #000000 transparent;
-  opacity: 0;
+  top: 127%;
+  width: 19px;
+  height: 9px;
+  background-image: url("../img/icons/triangle-black.svg");
   visibility: hidden;
 }
 
 .modal-button {
   display: block;
+  margin-top: 40px;
   width: 575px;
+  height: 60px;
   border: none;
   border-radius: 10px;
   text-align: center;
@@ -1031,18 +1088,25 @@ html {
   font-size: 20px;
   line-height: 40px;
   background-color: #83b3d3;
+  border: 3px solid #83b3d3;
   color: #ffffff;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .modal-button:hover {
   background-color: #68a2ca;
+  border: 3px solid #68a2ca;
 }
 
 .modal-button:focus {
   border: 3px solid #756257;
 }
 
+.modal-button:active {
+  opacity: 0.3;
+  border: 3px solid #68a2ca;
+}
 .modal-button:active span {
   opacity: 0.3;
 }
@@ -1225,12 +1289,10 @@ html {
 
 .control:hover .control-mark {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
 }
 
 .control-input:focus + .control-mark {
   outline: 3px solid #83b3d3;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1438,6 +1500,7 @@ html {
   height: 48px;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
