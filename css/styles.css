@@ -1572,7 +1572,9 @@ img {
 
 .apply-button {
   width: 160px;
-  padding: 15px 30px 15px 30px;
+  min-height: 48px;
+  padding: 10px 30px 10px 30px;
+  margin-bottom: 10px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1591,7 +1593,13 @@ img {
 }
 
 .apply-button:focus {
-  outline: 3px solid #ffffff;
+  outline: none;
+  border: 3px solid #ffffff;
+}
+
+.apply-button:active {
+  outline: none;
+  border: none;
 }
 
 .apply-button:active span {
@@ -1604,7 +1612,8 @@ img {
 
 .reset-button {
   width: 160px;
-  padding: 15px 30px 15px 30px;
+  min-height: 48px;
+  padding: 10px 30px 10px 30px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1627,6 +1636,8 @@ img {
 
 .reset-button:active {
   opacity: 0.3;
+  outline: none;
+  border: none;
 }
 
 .sorting {
@@ -1635,7 +1646,7 @@ img {
 
 .sorting-inner-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .sorting-result,
@@ -1652,6 +1663,7 @@ img {
 
 .select-control {
   width: 100%;
+  min-height: 48px;
   padding: 8px 14px;
   padding-right: 48px;
   font-family: "PT Sans", sans-serif;
@@ -1687,12 +1699,8 @@ img {
 }
 
 .view-results {
-  position: relative;
-  top: 50%;
-  bottom: 50%;
-  transform: translate(-50%, -10%);
   width: 48px;
-  height: 48px;
+  min-height: 48px;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   background-color: #ffffff;
