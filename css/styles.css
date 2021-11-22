@@ -1854,7 +1854,9 @@ img {
 }
 
 .more {
-  padding: 10px 30px 10px 30px;
+  width: 151px;
+  min-height: 37px;
+  padding: 8px;
   margin-right: 8px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -1899,7 +1901,9 @@ img {
 }
 
 .favorities {
-  padding: 10px 30px 10px 30px;
+  width: 160px;
+  min-height: 37px;
+  padding: 8px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1979,7 +1983,11 @@ img {
 }
 
 .rating-value {
-  padding: 10px 30px 10px 30px;
+  width: 160px;
+  min-height: 37px;
+  padding: 8px;
+  padding-left: 26px;
+  text-transform: uppercase;
   background-color: #f2f2f2;
   border-radius: 4px;
 }
