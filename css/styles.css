@@ -608,6 +608,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 400px;
+  min-height: 384px;
   padding-top: 72px;
   padding-bottom: 82px;
 }
@@ -647,7 +648,7 @@ img {
 }
 
 .hotel-search {
-  padding-top: 118px;
+  padding-top: 86px;
   padding-bottom: 88px;
 }
 
@@ -1985,12 +1986,14 @@ img {
 
 .upload-btn {
   width: 625px;
+  min-height: 55px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
 .upload-more {
   width: 100%;
+  height: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: "PT Sans", sans-serif;
@@ -2101,7 +2104,7 @@ img {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 26px;
   border-top: 1px solid #e6e6e6;
 }
 
