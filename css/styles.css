@@ -1599,7 +1599,6 @@ img {
 
 .apply-button:active {
   outline: none;
-  border: none;
 }
 
 .apply-button:active span {
