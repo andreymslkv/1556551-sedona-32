@@ -1800,6 +1800,7 @@ img {
 
 .search-results-image:active {
   opacity: 0.3;
+  outline: none;
 }
 
 .search-results-image:disabled {
@@ -1830,6 +1831,7 @@ img {
 
 .results-info-title:active {
   opacity: 0.3;
+  outline: none;
 }
 
 .results-info-title:disabled {
@@ -1870,7 +1872,11 @@ img {
 }
 
 .more:focus {
-  outline: 3px solid #756257;
+  outline: 3px solid #68a2ca;
+}
+
+.more:active {
+  outline: none;
 }
 
 .more:active span {
@@ -1913,6 +1919,10 @@ img {
   outline: 3px solid #756257;
 }
 
+.favorities:active {
+  outline: none;
+}
+
 .favorities:active span {
   opacity: 0.3;
 }
@@ -1931,6 +1941,10 @@ img {
 
 .in-selected:focus {
   outline: 3px solid #756257;
+}
+
+.in-selected:active {
+  outline: none;
 }
 
 .in-selected:active span {
@@ -1999,6 +2013,10 @@ img {
   outline: 3px solid #756257;
 }
 
+.upload-more:active {
+  outline: none;
+}
+
 .upload-more:active span {
   opacity: 0.3;
 }
@@ -2033,6 +2051,7 @@ img {
 }
 
 .pagination-item:active .pagination-link {
+  outline: none;
   opacity: 0.3;
 }
 
