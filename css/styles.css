@@ -81,11 +81,11 @@ img {
 
 .navigation-item {
   margin: 12px 0;
-  margin-right: 21px;
+  margin-right: 10px;
 }
 
 .navigation-link {
-  padding: 17px 0;
+  padding: 17px 12px;
   text-decoration: none;
   color: #000000;
 }
@@ -121,7 +121,7 @@ img {
 .active::after {
   position: absolute;
   content: "";
-  width: 100%;
+  width: calc(100% - 24px);
   height: 2px;
   left: 50%;
   bottom: -19px;
